@@ -1,0 +1,15 @@
+Öncelikle çalışmamızda çok sayıda pilot model oluşturulacağı için train ve validation setlerindeki resim sayısı minimal düzeyde tutulmuştur. 
+Toplamda 3 sınıfa(BCC, MEL, NV) ait 300 resim (100-100-100) train, 150 resim validation ve 300 resim ise test seti için ayrılmıştır.
+Problem çözümünde Diferansiyel Gelişim Alogirtması kullanılmıştır.
+Her bir kromozomun uygunluk değeri olacak değişken, test setinin accuracy oranı olarak belirlenmiştir.
+Modeller train set ile eğitilir. Eğitim esnasında modellerin öğrenim durumunu canlı olarak takip etmek için validation set kullanılır. Eğitim tamamlandıktan sonra
+test seti ile model test edilip ortaya çıkan accuracy değeri, modelin uygunluk değeri olarak belirlenir.
+
+Değişim sağlanacak hiperparametreler:
+
+Filter Size
+Kernel Size
+Dense Size
+Dropout Rate
+Optimizer Method
+Epoch Size
